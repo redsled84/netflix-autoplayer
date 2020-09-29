@@ -6,7 +6,7 @@ from pyautogui import click
 # adjust them accordingly
 position = (x=1127, y=638)
 
-def autoplay_netflix(episode_length):
+def netflix_autoplayer(episode_length):
     global position
     while True:               # infinite loop for infinite Netflix time
         sleep(episode_length) # wait until at least one episode has passed
@@ -20,4 +20,4 @@ def autoplay_netflix(episode_length):
 if __name__ == "__main__":
     # enter the length of one episode in seconds
     episode_length = 1320 # 22 minutes
-    autoplay_netflix(episode_length)
+    netflix_autoplayer(episode_length)
