@@ -4,15 +4,16 @@ from pyautogui import click
 
 # If you're resolution is lower than the position coordinates,
 # adjust them accordingly
-position = (x=1127, y=638)
+position_x = 1127
+position_y = 638
 
 def netflix_autoplayer(episode_length):
-    global position
+    global position_x, position_y
     while True:               # infinite loop for infinite Netflix time
         sleep(episode_length) # wait until at least one episode has passed
-        click(position)       # pause the show
+        click(x=position_x, y=position_y)   # pause the show   
         sleep(1)              # wait one second so we don't exit fullscreen
-        click(position)       # resume the show
+        click(x=position_x, y=position_y)   # resume the show
 
 # Netflix has to be fullscreen and playing a TV show in order for this script
 # to work as intended. I wouldn't use this on a movie because that would be
