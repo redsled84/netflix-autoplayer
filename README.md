@@ -1,5 +1,5 @@
 # netflix_autoplayer
-Basic python script that autoplays any Netflix TV show until it's over. I created this because I'm too lazy to move 5 feet to unpause the "Are you still watching?" pop-up.
+Basic python script that autoplays any Netflix TV show until it's over. I created this because I'm too lazy to consistently move 5 feet to unpause the "Are you still watching?" pop-up.
 
 # Usage
 ```bash
